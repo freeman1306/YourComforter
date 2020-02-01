@@ -1,0 +1,35 @@
+@import "../../../uiKit/variables";
+
+.wrapper {
+  padding: 24px 16px 42px 16px;
+  box-sizing: border-box;
+
+  h3 {
+    padding-bottom: 16px;
+  }
+}
+
+.item {
+  width: 100%;
+  padding: 24px 0;
+  border-bottom: 1px solid $gray4;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.errorText {
+  color: $secondaryColor;
+}

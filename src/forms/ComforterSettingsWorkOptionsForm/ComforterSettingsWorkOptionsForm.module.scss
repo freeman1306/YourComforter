@@ -1,0 +1,142 @@
+@import "../../uiKit/variables";
+
+.wrapper {
+  padding: 24px 0 10px 0;
+  box-sizing: border-box;
+  @media only screen and (min-width: 768px) {
+    padding: 24px 0 0 0;
+  }
+  h3 {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    @media only screen and (min-width: 768px) {
+      padding-left: 24px;
+    }
+  }
+}
+
+.lastWrapper {
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 15px;
+  }
+}
+
+.locationPrefWrap {
+  padding-bottom: 15px;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .dropdownWrap {
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+      width: 69%;
+    }
+  }
+
+  .buttonWrap {
+    @media only screen and (min-width: 768px) {
+      width: 29%;
+    }
+  }
+}
+
+.dropdownWrap {
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+    margin-right: 24px;
+  }
+}
+
+.servicesTitle span {
+  text-align: left;
+  padding-bottom: 0px;
+  color: $gray1;
+  padding-top: 24px;
+  display: block;
+}
+
+.services {
+  padding-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.servicesLeft,
+.servicesCenter,
+.servicesRight {
+  margin-top: 24px;
+
+  @media only screen and (min-width: 768px) {
+    width: 48%;
+  }
+
+  @media only screen and (min-width: 1272px) {
+    width: 33%;
+  }
+}
+
+.servicesItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 360px;
+  margin-bottom: 12px;
+
+  .inputWrap {
+    width: 65px;
+    height: 32px;
+  }
+
+  span {
+    padding-top: 0;
+    font-weight: bold;
+    color: $primaryColor;
+    font-size: 15px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  label {
+    span {
+      color: $black1;
+      font-weight: normal;
+    }
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.errorText {
+  color: $secondaryColor;
+}
+
+.addLocationButtonWrapper {
+  margin: 24px 16px;
+  @media only screen and (min-width: 768px) {
+    margin: 24px 0 33px 24px;
+    max-width: 184px;
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../uiKit/variables";
+
+.wrapper {
+  padding: 24px 16px 42px 16px;
+  box-sizing: border-box;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+
+  @media only screen and (min-width: 1272px) {
+    padding-bottom: 298px;
+  }
+
+  h3 {
+    padding-bottom: 24px;
+  }
+
+  h3.personalInfoTitle {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
+  .filePreferencesWrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    @media only screen and (min-width: 1272px) {
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  .left {
+    margin-top: 24px;
+    width: 100%;
+
+    @media only screen and (min-width: 1272px) {
+      margin-top: 0;
+      width: 623px;
+    }
+  }
+
+  .right {
+    width: 100%;
+
+    @media only screen and (min-width: 1272px) {
+      width: 392px;
+    }
+  }
+
+  .filePreferencesItem:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  .dropdownWrap {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .margin {
+      margin-top: 24px;
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+        margin-top: 0;
+        width: 31%;
+      }
+    }
+  }
+
+  .medConditionsBtnWrap,
+  .communicationPrefBtnWrap {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+
+  .medConditionsBtnWrap {
+    width: 154px;
+  }
+
+  .communicationPrefBtnWrap {
+    width: 320px;
+  }
+
+  .textareaWrap {
+    width: 100%;
+  }
+
+  .medConditions,
+  .communicationPref {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    span {
+      @media only screen and (min-width: 768px) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.errorText {
+  color: $secondaryColor;
+}

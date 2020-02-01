@@ -1,0 +1,64 @@
+@import "../../../uiKit/variables";
+
+.wrapper {
+  padding: 24px 16px 42px 16px;
+  box-sizing: border-box;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+
+  @media only screen and (min-width: 1272px) {
+    padding-bottom: 298px;
+  }
+
+  h3 {
+    padding-bottom: 0;
+  }
+
+  .vehicleDetailsWrap {
+    margin-top: 40px;
+  }
+
+  .vehicleDetailsItem,
+  .licenseDataItem {
+    margin-top: 24px;
+    width: 100%;
+
+    @media only screen and (min-width: 520px) {
+      width: 184px;
+      margin-right: 24px;
+    }
+  }
+
+  .radioBtnWrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 12px;
+    width: 154px;
+  }
+
+  .licenseData,
+  .vehicleDetails {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.errorText {
+  color: $secondaryColor;
+}

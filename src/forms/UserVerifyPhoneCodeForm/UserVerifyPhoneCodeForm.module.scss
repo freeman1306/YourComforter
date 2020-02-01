@@ -1,0 +1,37 @@
+@import "../../uiKit/variables";
+
+.mainTitle {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  color: $black3;
+  margin: 0;
+  padding-bottom: 32px;
+
+  span {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 0;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 156px;
+
+    @media only screen and (min-width: 768px) {
+      width: 186px;
+    }
+  }
+}

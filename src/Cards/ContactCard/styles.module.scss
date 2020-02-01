@@ -1,0 +1,83 @@
+@import "../../uiKit/variables";
+
+.companion {
+  border-bottom: 1px solid $black4;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 24px;
+  display: flex;
+
+  &:hover {
+    background-color: $primaryColor5;
+    cursor: pointer;
+  }
+
+  &.selected {
+    background-color: $primaryColor5;
+    border-left: 4px solid $secondaryColor;
+
+    .companionName {
+      color: $primaryColor;
+    }
+  }
+
+  .left {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .right {
+    display: block;
+    width: calc(100% - 72px);
+  }
+
+  .companionData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .companionNameWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .companionName {
+    padding: 0;
+    color: $primaryColor2;
+  }
+
+  .companionDate {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .companionLastMessageWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+  }
+
+  .companionLastMessage {
+    color: $gray2;
+  }
+
+  .companionNewMessagesCount {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white1;
+    font-size: 12px;
+    padding: 0;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../uiKit/variables";
+
+.dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  overflow: auto;
+
+  .inner {
+    margin: auto;
+    background-color: $white;
+    border-radius: 24px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid $gray4;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 330px;
+
+    @media (min-width: 510px) {
+      max-width: 472px;
+    }
+  }
+
+  &Header {
+    border-bottom: 1px solid $black4;
+    padding: 24px 24px 18px;
+    position: relative;
+  }
+
+  &TimeWrapper {
+    padding: 16px 24px 0;
+
+    @media (min-width: 510px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    & > span {
+      width: 14px;
+      height: 2px;
+      padding: 0;
+      margin: 0 13px;
+      margin-top: 30px;
+      background-color: $primaryColor2;
+    }
+  }
+
+  &Title {
+    color: $black1;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &CloseButton {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    &:focus {
+      outline: none;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+
+      path {
+        fill: $secondaryColor;
+      }
+    }
+  }
+
+  &DateInput {
+    margin: 18px 24px 0;
+  }
+
+  &SaveButton {
+    margin: 24px auto;
+  }
+
+  &InputWrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &Input {
+    margin-right: 5px;
+    @media (min-width: 510px) {
+      width: 58px;
+    }
+  }
+
+  &Period {
+    & > div[role="listbox"] {
+      @media (min-width: 510px) {
+        min-width: 85px;
+      }
+    }
+  }
+
+  &Error {
+    font-size: 12px;
+    color: $secondaryColor;
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+  }
+}

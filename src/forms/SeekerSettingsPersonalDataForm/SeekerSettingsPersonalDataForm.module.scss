@@ -1,0 +1,124 @@
+@import "../../uiKit/variables";
+
+.formWrapper {
+  padding: 24px 24px 40px;
+}
+
+.personalDataWrapper {
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 1272px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .marginTop {
+    margin-top: 24px;
+  }
+
+  .personalDataCol {
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      padding-right: 24px;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .personalDataRow {
+    display: flex;
+    & > div {
+      width: 50%;
+      &:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .personalDataFormCenter {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (min-width: 1272px) {
+      width: 610px;
+    }
+  }
+
+  .personalDataFormRight {
+    @media only screen and (min-width: 1272px) {
+      width: 405px;
+    }
+  }
+}
+.contactDataWrapper {
+  margin-bottom: 40px;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .margin {
+    margin-top: 24px;
+
+    @media only screen and (min-width: 768px) {
+      margin-right: 24px;
+    }
+  }
+}
+.services {
+  border: none;
+  padding: 0;
+}
+
+.servicesWrapper {
+  margin-top: 6px;
+  width: 100%;
+
+  .checkboxWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      max-height: 160px;
+      width: 80%;
+    }
+  }
+
+  .margin {
+    margin-top: 16px;
+  }
+}
+.titleWrap {
+  display: flex;
+  align-items: center;
+
+  .title {
+    margin-right: 16px;
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.errorText {
+  color: $secondaryColor;
+}

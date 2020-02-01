@@ -1,0 +1,157 @@
+@import "../../uiKit/variables";
+/* autoprefixer grid: autoplace */
+
+.wrapper {
+  padding: 24px 16px;
+
+  .mainTitle {
+    display: inline;
+  }
+
+  .userFullName {
+    padding-left: 12px;
+  }
+
+  .companionFriend {
+    @media only screen and (min-width: 1272px) {
+      display: grid;
+      grid-template-columns: 1fr 500px;
+      grid-template-rows: auto;
+      grid-gap: 67px;
+    }
+  }
+
+  .companionFriendWrap {
+    margin-top: 45px;
+  }
+
+  .title {
+    padding-bottom: 24px;
+  }
+
+  .radioButtonWrapLabel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      margin-right: 8px;
+    }
+  }
+
+  .dropdownWrap {
+    @media only screen and (min-width: 768px) {
+      width: 392px;
+    }
+  }
+
+  .serviceTitle {
+    padding-top: 24px;
+  }
+
+  .hintWrap {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .radioButtonWrap {
+    margin-top: 12px;
+    position: relative;
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .radioItemWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+    }
+    span {
+      padding: 0;
+      text-align: left;
+      margin-left: 6px;
+      font-weight: bold;
+      color: $primaryColor;
+    }
+  }
+
+  .orderScedulingWrap {
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: auto;
+    // grid-gap: 24px;
+
+    @media only screen and (min-width: 768px) {
+      // grid-template-columns: repeat(2, 1fr);
+      // grid-template-rows: auto;
+    }
+
+    @media only screen and (min-width: 1272px) {
+      // max-width: 808px;
+    }
+  }
+
+  .orderInputs {
+    width: 328px;
+    &:first-child {
+      margin-right: 24px;
+    }
+    @media only screen and (max-width: 400px) {
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+
+    @media only screen and (min-width: 760px) {
+      width: 392px;
+    }
+  }
+
+  .inputDate {
+    position: relative;
+    & > div {
+      @media (min-width: 1180px) {
+        top: auto;
+        bottom: 67%;
+      }
+    }
+  }
+
+  .totalPrice {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: $primaryColor;
+    font-weight: bold;
+
+    span {
+      display: inline-block;
+      text-align: left;
+      color: $secondaryColor;
+    }
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px 40px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../uiKit/variables";
+
+.rejectJobModalForm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 20px;
+
+  .inner {
+    max-width: 680px;
+    margin: 25vh auto 0;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    border: 1px solid $gray4;
+    background-color: $white;
+    @media (min-width: 768px) {
+      padding: 40px;
+    }
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .title {
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: $black2;
+    margin-bottom: 33px;
+  }
+
+  .content {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    display: flex;
+    & > *:first-child {
+      margin-right: 20px;
+    }
+    @media (min-width: 768px) {
+      & > *:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}

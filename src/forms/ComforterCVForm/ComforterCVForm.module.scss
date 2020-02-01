@@ -1,0 +1,41 @@
+@import "../../uiKit/variables";
+
+.wrapper {
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.cvInput {
+  width: 100%;
+  margin-bottom: 16px;
+  @media only screen and (min-width: 768px) {
+    max-width: 392px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.cvAddButton {
+  @media only screen and (min-width: 768px) {
+    width: 184px;
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px 0 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}

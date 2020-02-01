@@ -1,0 +1,164 @@
+@import "../../uiKit/variables";
+
+.formWrapper {
+  padding: 24px 24px 40px;
+}
+
+.personalDataWrapper {
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 1272px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .marginTop {
+    margin-top: 24px;
+  }
+
+  .personalDataCol {
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+      padding-right: 24px;
+      &:last-child {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .personalDataFormCenter {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (min-width: 1272px) {
+      width: 610px;
+    }
+  }
+
+  .personalDataFormRight {
+    @media only screen and (min-width: 1272px) {
+      width: 405px;
+    }
+  }
+}
+.contactDataWrapper {
+  margin-bottom: 40px;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .margin {
+    margin-top: 24px;
+
+    @media only screen and (min-width: 768px) {
+      margin-right: 24px;
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+.services {
+  border: none;
+  padding: 0;
+}
+
+.servicesWrapper {
+  margin-top: 6px;
+  width: 100%;
+
+  .checkboxWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      max-height: 160px;
+      width: 80%;
+    }
+  }
+
+  .margin {
+    margin-top: 16px;
+  }
+}
+.titleWrap {
+  display: flex;
+  align-items: center;
+
+  .title {
+    margin-right: 16px;
+  }
+}
+
+.advancedDataWrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
+  .socialLink {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  .radioButtonTitle {
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .radioButtonWrap {
+    width: 50%;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: 768px) {
+      margin-right: 24px;
+      width: 25%;
+    }
+  }
+
+  .radioButtons {
+    display: flex;
+    & > div {
+      margin-right: 5px;
+      @media (min-width: 340px) {
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.errorText {
+  color: $secondaryColor;
+}

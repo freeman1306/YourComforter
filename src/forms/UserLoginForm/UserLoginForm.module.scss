@@ -1,0 +1,51 @@
+@import "../../uiKit/variables";
+
+/*For wild screen*/
+.formWrapper {
+  padding-top: 65px;
+  transform: scale(0.75);
+
+  @media only screen and (min-width: 1380px) {
+    // padding-top: 0px;
+    transform: scale(1);
+  }
+}
+
+.title {
+  color: $secondaryColor;
+  margin: 0;
+  margin-top: 16px;
+  padding-bottom: 40px;
+  display: none;
+
+  @media only screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.formImage {
+  margin: 0 auto;
+  display: block;
+  width: 70px;
+  height: auto;
+
+  @media only screen and (min-width: 1024px) {
+    width: auto;
+  }
+}
+
+.description {
+  color: $primaryColor2;
+  margin-bottom: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.forgotButton {
+  font-size: 12px;
+  color: $primaryColor2;
+  font-weight: 600;
+  cursor: pointer;
+}

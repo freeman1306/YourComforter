@@ -1,0 +1,293 @@
+@import "../../uiKit/variables";
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.inner {
+  background-color: $white;
+  box-sizing: border-box;
+  position: relative;
+  margin: auto;
+  width: 100%;
+
+  @media only screen and (min-width: 680px) {
+    border: 1px solid $gray4;
+    border-radius: 24px;
+    width: 680px;
+  }
+
+  .closeModal {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+    background-color: $secondaryColor;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media only screen and (min-width: 600px) {
+      display: flex;
+    }
+  }
+
+  .topModal {
+    padding: 24px 16px;
+    border-bottom: 1px solid $gray4;
+
+    @media only screen and (min-width: 1600px) {
+      padding: 40px 40px 24px 40px;
+    }
+  }
+
+  .bottomModal {
+    padding: 24px 16px;
+    border-bottom: 1px solid $gray4;
+
+    @media only screen and (min-width: 600px) {
+      border-bottom: none;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      padding: 24px 40px 40px 40px;
+    }
+  }
+
+  .titleWrap {
+    margin-top: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (min-width: 600px) {
+      margin-top: 33px;
+      text-align: center;
+    }
+
+    .title {
+      padding-bottom: 0;
+
+      @media only screen and (min-width: 600px) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .backLink {
+      margin-right: 25px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .mainDataWrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+    &Top {
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @media only screen and (min-width: 760px) {
+        flex-direction: row;
+      }
+    }
+
+    &Bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .mainDataWrapTop {
+    .input {
+      margin-bottom: 24px;
+
+      @media only screen and (min-width: 760px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .mainDataWrapBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+
+    .input {
+      width: calc(50% - 8px);
+
+      @media only screen and (min-width: 760px) {
+        width: calc(50% - 12px);
+      }
+    }
+
+    .bottomInfoText {
+      width: calc(50% - 8px);
+
+      @media only screen and (min-width: 760px) {
+        width: calc(50% - 12px);
+      }
+    }
+  }
+
+  .locationWrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 760px) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .input {
+      margin-bottom: 0px;
+
+      &:first-child {
+        margin-bottom: 24px;
+
+        @media only screen and (min-width: 760px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .checkWrap {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .btnWrap {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 40px 0;
+
+    @media only screen and (min-width: 600px) {
+      justify-content: center;
+    }
+
+    .cancel {
+      width: 156px;
+      margin-right: 16px;
+
+      @media only screen and (min-width: 600px) {
+        margin-right: 24px;
+        width: 184px;
+      }
+    }
+
+    .save {
+      width: 156px;
+
+      @media only screen and (min-width: 600px) {
+        width: 184px;
+      }
+    }
+  }
+
+  .textarea {
+    @media only screen and (min-width: 1600px) {
+      height: 100px;
+    }
+  }
+}
+
+.input,
+.infoText {
+  position: relative;
+  width: 100%;
+
+  @media only screen and (min-width: 760px) {
+    width: calc(50% - 12px);
+  }
+
+  &Label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &Value {
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0.5em;
+    line-height: 1.5;
+    color: $black2;
+    width: auto;
+    border-radius: 0.5em;
+    border: 1px solid $black3;
+    background-color: $black7;
+    display: flex;
+    align-items: center;
+    margin-top: 0.4em;
+    text-transform: capitalize;
+    min-height: 43px;
+  }
+}
+
+.bottomInfoText {
+  width: 100%;
+
+  @media only screen and (min-width: 760px) {
+    width: calc(50% - 12px);
+  }
+}
+
+.medicalText {
+  width: 100%;
+}
+
+.checkboxWrap {
+  width: calc(50% - 8px);
+
+  @media only screen and (min-width: 760px) {
+    width: calc(50% - 12px);
+  }
+}
+
+.ServicePreferences1 {
+  margin-bottom: 16px;
+}

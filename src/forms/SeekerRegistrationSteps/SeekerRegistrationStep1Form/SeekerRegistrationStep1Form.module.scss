@@ -1,0 +1,131 @@
+@import "../../../uiKit/variables";
+
+.formWrapper {
+  padding: 24px 16px 40px 16px;
+
+  .margin {
+    margin-top: 24px;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      margin-right: 0px;
+    }
+  }
+
+  .width50 {
+    @media only screen and (min-width: 768px) {
+      width: 48.5%;
+    }
+  }
+
+  .width33 {
+    @media only screen and (min-width: 768px) {
+      width: 31.5%;
+    }
+  }
+}
+
+.personalDataWrapper {
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 1272px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .userEditableImageWrap {
+    margin: 35px auto 0;
+    width: 184px;
+
+    @media only screen and (min-width: 1272px) {
+      margin: 35px 24px 0 0;
+    }
+  }
+
+  .personalDataFormCenter {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: 1272px) {
+      width: 620px;
+    }
+  }
+
+  .personalDataFormRight {
+    width: 100%;
+
+    @media only screen and (min-width: 1272px) {
+      width: 392px;
+      margin-left: 24px;
+      margin-right: 0;
+    }
+  }
+}
+
+.contactDataWrapper {
+  margin-bottom: 40px;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .margin {
+    @media only screen and (min-width: 768px) {
+      width: 184px;
+      margin-right: 24px;
+    }
+  }
+}
+
+.services {
+  border: none;
+  padding: 0;
+}
+
+.servicesWrapper {
+  margin-top: 6px;
+  width: 100%;
+
+  .checkboxWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      max-height: 120px;
+    }
+  }
+
+  .margin {
+    margin-top: 16px;
+    width: auto;
+  }
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+
+  .title {
+    margin-right: 16px;
+  }
+}
+
+.btnWrap {
+  padding: 24px 16px;
+  border-top: 1px solid $black4;
+  display: flex;
+
+  justify-content: center;
+}
+
+.errorText {
+  color: $secondaryColor;
+}
