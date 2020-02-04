@@ -1,0 +1,24 @@
+@import "../../uiKit/variables";
+
+.titleWrap {
+  padding: 0 16px;
+  border-bottom: 1px solid $black4;
+}
+
+.wrapper {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+h2 {
+  font-weight: bold;
+
+  @media only screen and (min-width: 768px) {
+    font-weight: normal;
+  }
+}
+
+.description {
+  color: $black2;
+  padding: 8px 0 24px 0;
+}

@@ -1,0 +1,282 @@
+@import "../../uiKit/variables";
+
+html,
+body {
+  height: auto;
+  overflow-y: auto;
+}
+
+.messagesWrapper {
+  padding: 0;
+  height: calc(100vh - 110px);
+
+  @media only screen and (min-width: 1024px) {
+    height: calc(100vh - 118px);
+  }
+
+  @media only screen and (min-width: 1272px) {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid $black4;
+    display: flex;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    height: calc(100vh - 138px);
+  }
+}
+
+.companionWrap {
+  width: 100%;
+  background-color: white;
+  overflow-y: hidden;
+  z-index: 0;
+  height: calc(100vh - 121px);
+
+  @media only screen and (min-width: 1272px) {
+    min-width: 415px;
+    max-width: 415px;
+    display: block;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    height: calc(100vh - 138px);
+  }
+}
+
+.companionSearch {
+  background: $primaryColor5;
+  border: 1px solid $gray4;
+  box-sizing: border-box;
+  padding: 19px 16px;
+
+  @media only screen and (min-width: 1272px) {
+    border: none;
+    border-bottom: 1px solid $gray4;
+  }
+}
+
+.companions {
+  margin: 0;
+  padding: 0 0 17px 0;
+  list-style-type: none;
+  height: calc(100vh - 201px);
+  overflow-y: auto;
+
+  @media only screen and (min-width: 1272px) {
+    padding: 0;
+    height: calc(100% - 82px);
+    border-right: 1px solid $black4;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primaryColor1;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primaryColor1;
+  }
+}
+
+.messageCompanionWrap {
+  width: 100%;
+  z-index: 1;
+  background-color: $white;
+  bottom: 58px;
+  height: calc(100vh - 121px);
+  position: absolute;
+  box-sizing: border-box;
+
+  @media only screen and (min-width: 1272px) {
+    position: static;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    height: calc(100vh - 139px);
+  }
+}
+
+.messageCompanionTopLine {
+  background: $primaryColor5;
+  border: 1px solid $gray4;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 52px;
+  left: 0;
+  z-index: 99;
+
+  @media only screen and (min-width: 1272px) {
+    top: 0;
+  }
+
+  .messageCompanionBack {
+    margin-right: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media only screen and (min-width: 1272px) {
+      display: none;
+    }
+  }
+
+  .actualCompanion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .actualCompanionAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 17px;
+  }
+
+  .actualCompanionName {
+    padding: 0;
+    color: $primaryColor;
+  }
+
+  .actualCompanionActivity {
+    padding: 0;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 0.8;
+
+    span {
+      display: inline-block;
+
+      &.online {
+        color: $secondaryColor;
+      }
+
+      &.offline {
+        color: $complement1;
+      }
+    }
+  }
+}
+
+.messagesWrap {
+  background-color: $white;
+  box-sizing: border-box;
+  margin: 0;
+  list-style-type: none;
+  height: calc(100vh - 281px);
+  padding: 0;
+  overflow-y: auto;
+
+  @media only screen and (min-width: 1024px) {
+    height: calc(100vh - 293px);
+  }
+
+  @media only screen and (min-width: 1600px) {
+    height: calc(100vh - 311px);
+  }
+
+  li {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primaryColor1;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primaryColor1;
+  }
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px 16px 25px 16px;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.MessageDateWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.MessageDate {
+  padding: 5px 16px;
+  box-sizing: border-box;
+  background: $primaryColor4;
+  border-radius: 12px;
+  font-size: 12px;
+  color: $black1;
+}
+
+.serviceMessageWrap {
+  margin: 16px 0;
+}
+
+.serviceMessageRightWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.serviceMessageLeftWrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.serviceMessage {
+  background: $primaryColor2;
+  padding: 5px 16px;
+  color: $white;
+  font-size: 12px;
+
+  a {
+    color: $white;
+  }
+}
+
+.serviceMessageRight {
+  border-radius: 12px 12px 0px 12px;
+}
+
+.serviceMessageLeft {
+  border-radius: 12px 12px 12px 0px;
+}
+
+.sendMessage {
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background: $black6;
+  border: 1px solid $black4;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
