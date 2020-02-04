@@ -1,0 +1,85 @@
+@import "../../uiKit/variables";
+
+.schedule {
+  .scheduleWeek {
+    margin-right: 0;
+    padding: 0;
+    @media (min-width: 768px) {
+      padding: 0 12px;
+    }
+  }
+
+  .scheduleDay {
+    max-width: calc(1065px / 7);
+    @media (min-width: 1280px) {
+      border: 1px solid $black4;
+      border-right: none;
+    }
+  }
+  .scheduleTime {
+    min-height: calc(455px / 15);
+
+    &.scheduleTimeSelected {
+      color: $green3;
+      @media (min-width: 1280px) {
+        background-color: $green3;
+      }
+    }
+    &.scheduleTimeBusy {
+      color: $secondaryColor1;
+      @media (min-width: 1280px) {
+        background-color: $secondaryColor1;
+        color: $secondaryColor1;
+      }
+    }
+  }
+}
+
+.scheduleInfo {
+  & > div:nth-child(2) span {
+    background-color: $black3;
+  }
+  & > div:nth-child(3) span {
+    background-color: $black5;
+  }
+  & > div:nth-child(4) span {
+    background-color: $secondaryColor1;
+  }
+  @media (min-width: 1280px) {
+    & > div:nth-child(2) span {
+      background-color: $white;
+    }
+    & > div:nth-child(3) span {
+      background-color: $black6;
+    }
+  }
+}
+
+.selectedHours {
+  display: none;
+  @media (min-width: 1280px) {
+    color: $primaryColor;
+    margin-bottom: 24px;
+    display: block;
+  }
+}
+
+.scheduleFooter {
+  border-top: 1px solid $black4;
+  padding: 24px 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    padding: 24px 40px 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cancelButton {
+    margin: 0 auto;
+    display: none;
+  }
+  .requestButton {
+    margin: 0 auto;
+  }
+}
