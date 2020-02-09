@@ -1,0 +1,116 @@
+@import '../../uiKit/variables';
+
+.wrapper {
+  padding-bottom: 0;
+}
+
+.mainWrap {
+  padding: 24px 16px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 24px;
+  }
+  @media only screen and (min-width: 1272px) {
+    padding: 24px;
+  }
+}
+
+.topWrap {
+  padding-bottom: 32px;
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.btnWrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+
+  .filterButton {
+    display: none;
+  }
+
+  .searchButton {
+    max-width: 288px;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: 22%;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    margin-bottom: 88px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .filterButton {
+      max-width: 24%;
+      display: block;
+      margin-right: 16px;
+    }
+    .searchButton {
+      width: 70%;
+    }
+  }
+}
+
+.inputWrap {
+  margin-bottom: 24px;
+  width: 100%;
+  @media only screen and (min-width: 1024px) {
+    width: 75%;
+    margin-bottom: 0;
+  }
+}
+
+.usersWrap {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  @media only screen and (min-width: 1024px) {
+    width: 75%;
+    margin-left: 25%;
+    padding-top: 50px;
+  }
+
+  a {
+    text-decoration: none;
+    border-radius: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.filterCheckbox {
+  margin-top: 16px;
+}
+
+.paginationWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.timeDropdown {
+  margin-bottom: 16px;
+}
+
+.reviewStars {
+  span {
+    margin-right: 7px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,313 @@
+@import "../../uiKit/variables";
+
+.adminWrapper {
+  max-width: 1920px;
+  width: 100%;
+  // height: 100%;
+  margin: 80px auto 0 auto;
+  background-color: $white;
+  list-style-type: none;
+}
+
+.navSection {
+  width: 100%;
+  top: 63px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 19;
+  right: 0;
+  left: 0;
+  @media only screen and (min-width: 1600px) {
+    top: 80px;
+  }
+}
+
+.adminTopnav {
+  margin: 0 auto;
+  max-width: 1480px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.adminNavList {
+  width: max-content;
+}
+
+.adminNavLink {
+  cursor: pointer;
+  font-size: 14px;
+  color: #9aa5ab;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.activeLink {
+  cursor: default;
+  color: #3d3f40;
+}
+
+.dashboardSection {
+  padding: 0 75px;
+}
+
+.adminCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #685f83;
+  border-radius: 6px;
+  width: 325px;
+  height: 299px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.cardSmallHeight {
+  height: 138px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  line-height: 24px;
+  color: #3d3f40;
+  text-align: center;
+}
+
+.cardCount {
+  font-size: 64px;
+  line-height: 75px;
+  color: $primaryColor;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.genders {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 60px;
+  .genderWrap {
+    text-align: center;
+    .genderSex {
+      font-size: 24px;
+      line-height: 28px;
+      color: $black3;
+      text-align: center;
+    }
+    .genderCount {
+      font-size: 64px;
+      line-height: 75px;
+      color: $primaryColor;
+      text-align: center;
+    }
+  }
+}
+
+.topAdminCards {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  .adminCard {
+    margin-bottom: 60px;
+  }
+}
+
+.infoBlock {
+  margin-bottom: 60px;
+}
+
+.blockTitle {
+  color: #000000;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.chartCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chartTable {
+  width: calc(100% - 400px);
+  min-height: 622px;
+}
+
+.chartTableSubscPlans {
+  width: calc(100% - 400px);
+}
+
+.fullSizeChart {
+  width: 100%;
+}
+
+.cardTable {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topCard {
+  border: 2px solid $primaryColor;
+  width: 407px; //temp
+}
+
+.topCardHead {
+  background-color: $primaryColor;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: $white;
+  p {
+    max-width: 246px;
+    text-align: center;
+  }
+}
+
+.topCardContent {
+  padding: 32px 30px 54px 30px;
+}
+
+.selectBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 14px;
+    color: #000000;
+  }
+  .select {
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    color: #3d3f40;
+    border-radius: 8px;
+    outline: none;
+    width: 120px;
+    height: 32px;
+    padding: 0 14px;
+  }
+}
+
+.wrapSelectForTopCard {
+  margin-bottom: 30px;
+}
+
+.topCardData {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  .topCardDataList {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    .numberList {
+      min-width: 25px;
+      width: 25px;
+      height: 25px;
+      border: 1px solid $primaryColor;
+      border-radius: 50%;
+      font-size: 14px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primaryColor;
+    }
+    .contentList {
+      margin-left: 10px;
+      font-size: 14px;
+      color: #000000;
+    }
+  }
+}
+
+.topCardsBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.borderTable {
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+.chartHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 24px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.chartHeadDate {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3d3f40;
+}
+
+.wrapSelectBlockForChartHead {
+  width: 305px;
+}
+
+// for rechart
+.pieTable {
+  display: flex;
+}
+
+.pieLegendWrap {
+  margin-top: auto;
+  margin-bottom: 55px;
+}
+
+.pieLegend {
+  display: flex;
+  align-items: center;
+  &:nth-child(2) {
+    margin-top: 77px;
+  }
+}
+
+.legendColor {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 13px;
+  font-size: 0;
+}
+
+.colorLabel1 {
+  background-color: #581f77;
+}
+
+.colorLabel2 {
+  background-color: #efbb40;
+}
+
+.legendTitle {
+  width: 297px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 250px;
+}

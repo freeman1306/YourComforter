@@ -1,0 +1,226 @@
+/* autoprefixer grid: autoplace */
+@import '../../uiKit/variables';
+
+.jobDetailsWrap {
+  padding: 30px 0 0;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    order: 4;
+    & > *:nth-child(2) {
+      margin-left: 24px;
+    }
+    @media only screen and (min-width: 768px) {
+      order: 1;
+      justify-content: flex-start;
+      border-bottom: 1px solid $black4;
+      padding-bottom: 24px;
+      margin-top: 0;
+    }
+  }
+
+  .dataWrap {
+    order: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $black4;
+
+    @media only screen and (min-width: 500px) {
+      padding: 0 16px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .dataItem {
+    span {
+      color: $black3;
+    }
+    @media only screen and (min-width: 500px) {
+      margin-right: 170px;
+    }
+  }
+
+  .description {
+    color: $black2;
+    & span {
+      padding-right: 5px;
+    }
+  }
+
+  .companionProfiWrap {
+    order: 3;
+    padding: 24px 0 80px 0;
+    border-bottom: 1px solid $black4;
+
+    @media only screen and (min-width: 768px) {
+      padding: 24px 0;
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  .reviewsContainer {
+    order: 4;
+    padding-top: 24px;
+    border-top: 1px solid #c1c1c1;
+  }
+
+  .companionProfiData {
+    margin-bottom: 24px;
+    @media only screen and (min-width: 768px) {
+      margin-right: 82px;
+      margin-bottom: 0;
+    }
+  }
+
+  .companionProfi {
+    padding-bottom: 24px;
+
+    &Location {
+      span {
+        color: $black3;
+      }
+    }
+
+    a {
+      color: $complement1;
+    }
+  }
+
+  .companionFriendsWrap {
+    order: 4;
+    padding: 0 16px;
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 248px 1fr;
+      grid-template-rows: auto;
+      grid-gap: 24px;
+    }
+
+    @media only screen and (min-width: 950px) {
+      grid-template-columns: 288px 1fr;
+      grid-template-rows: auto;
+      // max-width: 912px;
+    }
+
+    .left,
+    .right {
+      padding: 24px 0;
+      border-bottom: 1px solid $black4;
+
+      @media only screen and (min-width: 768px) {
+        border-bottom: none;
+      }
+    }
+
+
+    & .reportText {
+      margin-top: 24px;
+    }
+    .left {
+      & .users {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &>p {
+        margin-bottom: 24px;
+        max-width: 260px;
+        &>a {
+          margin-left: 5px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .noteMessage {
+    margin-top: 4px;
+    padding: 8px 9px;
+    border: 1px solid $black3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    color: $black2;
+    line-height: 24px;
+  }
+
+  .friendItem {
+    width: auto;
+    span {
+      color: $black3;
+    }
+  }
+}
+
+.orderModalInner {
+  @media (min-width: 510px) {
+    max-width: 680px;
+  }
+}
+
+.mainStarsBlock {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  span {
+    margin-right: 11px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.orderModalTitle {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.orderModalSubtitle {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.orderModalTextarea {
+  text-align: left;
+
+  textarea {
+    min-height: 124px;
+  }
+}
+
+.reviewCanceBtn {
+  max-width: unset !important;
+  width: calc(50% - 12px) !important;
+  height: 40px;
+}
+
+.reviewSaveBtn {
+  max-width: unset !important;
+  width: calc(50% - 12px) !important;
+  height: 40px;
+}
+
+.paginationWrap {
+  display: flex;
+  justify-content: center;
+}
